@@ -1,4 +1,4 @@
-import {SECRET_KEY} from '../config';
+import {SECRET_KEY} from '../config/index.js';
 import jwt from "jsonwebtoken";
 
 export default class JwtToken {

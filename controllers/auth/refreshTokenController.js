@@ -1,7 +1,7 @@
-import { REFRESH_TOKEN_SECRET_KEY } from "../../config";
+import { REFRESH_TOKEN_SECRET_KEY } from "../../config/index.js";
 import CustomErrorHandler from "../../services/CustomErrorHandler";
 import JwtToken from "../../services/JwtToken";
-import { refreshTokenModel } from "../../models";
+import { refreshTokenModel } from "../../models/index.js";
 
 const refreshTokenController = {
   async refresh(req, res, next) {

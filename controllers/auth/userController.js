@@ -1,4 +1,4 @@
-import { UserModel } from "../../models";
+import { UserModel } from "../../models/index.js";
 import CustomErrorHandler from "../../services/CustomErrorHandler";
 
 const userController = {

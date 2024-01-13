@@ -1,4 +1,4 @@
-import { newsModel } from "../../models";
+import { newsModel } from "../../models/index.js";
 import CustomErrorHandler from "../../services/CustomErrorHandler";
 
 const newsDataController = {

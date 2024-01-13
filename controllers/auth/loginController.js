@@ -1,9 +1,9 @@
 import Joi from "joi";
-import { UserModel, refreshTokenModel } from "../../models";
+import { UserModel, refreshTokenModel } from "../../models/index/js";
 import CustomErrorHandler from "../../services/CustomErrorHandler";
 import JwtToken from "../../services/JwtToken";
 import bcrypt from "bcrypt";
-import { REFRESH_TOKEN_SECRET_KEY } from "../../config";
+import { REFRESH_TOKEN_SECRET_KEY } from "../../config/index.js";
 
 const loginController = {
   async login(req, res, next) {

@@ -1,13 +1,13 @@
 import express from 'express';
-import { APP_PORT,MONGODB_USERNAME,MONGODB_PASSWORD } from "./config";
+import { APP_PORT,MONGODB_USERNAME,MONGODB_PASSWORD } from "./config/index.js";
 import cors  from "cors";
 import mongoose from 'mongoose';
 
 //middleware
-import {errorHandler} from "./middlewares";
+import {errorHandler} from "./middlewares/index.js";
 
 //routes
-import { router } from "./routes";
+import { router } from "./routes/index.js";
 
 const app = express();
 

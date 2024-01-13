@@ -1,9 +1,9 @@
 import Joi from "joi";
-import { UserModel, refreshTokenModel } from "../../models";
+import { UserModel, refreshTokenModel } from "../../models/index.js";
 import CustomErrorHandler from "../../services/CustomErrorHandler";
 import bcrypt from "bcrypt";
 import JwtToken from "../../services/JwtToken";
-import { REFRESH_TOKEN_SECRET_KEY } from "../../config";
+import { REFRESH_TOKEN_SECRET_KEY } from "../../config/index.js";
 
 const registerController = {
   async resolveReq(req, res, next) {
