@@ -1,7 +1,8 @@
-import { ValidationError } from 'joi';
+import pkg from 'joi';
 import { DEBUG_MODE } from "../config/index.js";
 import CustomErrorHandler from "../services/CustomErrorHandler.js";
 
+const { ValidationError } = pkg;
 function errorHandler (err, req,res,next) {
     let statusCode = 500;
     let data = {
