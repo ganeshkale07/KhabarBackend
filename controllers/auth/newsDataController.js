@@ -1,5 +1,5 @@
 import { newsModel } from "../../models/index.js";
-import CustomErrorHandler from "../../services/CustomErrorHandler";
+import CustomErrorHandler from "../../services/CustomErrorHandler.js";
 
 const newsDataController = {
     async getAllNews(req,res,next) {

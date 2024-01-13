@@ -1,5 +1,5 @@
-import CustomErrorHandler from "../services/CustomErrorHandler";
-import JwtToken from "../services/JwtToken";
+import CustomErrorHandler from "../services/CustomErrorHandler.js";
+import JwtToken from "../services/JwtToken.js";
 
 
 export default function auth (req,res,next) {

@@ -1,7 +1,7 @@
 import Joi from "joi";
-import { UserModel, refreshTokenModel } from "../../models/index/js";
-import CustomErrorHandler from "../../services/CustomErrorHandler";
-import JwtToken from "../../services/JwtToken";
+import { UserModel, refreshTokenModel } from "../../models/index.js";
+import CustomErrorHandler from "../../services/CustomErrorHandler.js";
+import JwtToken from "../../services/JwtToken.js";
 import bcrypt from "bcrypt";
 import { REFRESH_TOKEN_SECRET_KEY } from "../../config/index.js";
 

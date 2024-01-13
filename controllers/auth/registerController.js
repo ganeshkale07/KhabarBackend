@@ -1,8 +1,8 @@
 import Joi from "joi";
 import { UserModel, refreshTokenModel } from "../../models/index.js";
-import CustomErrorHandler from "../../services/CustomErrorHandler";
+import CustomErrorHandler from "../../services/CustomErrorHandler.js";
 import bcrypt from "bcrypt";
-import JwtToken from "../../services/JwtToken";
+import JwtToken from "../../services/JwtToken.js";
 import { REFRESH_TOKEN_SECRET_KEY } from "../../config/index.js";
 
 const registerController = {
