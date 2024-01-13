@@ -1,3 +1,3 @@
-export { default as UserModel} from './user';
-export { default as refreshTokenModel} from './refreshToken';
-export { default as newsModel} from './news';
+export { default as UserModel} from './user.js';
+export { default as refreshTokenModel} from './refreshToken.js';
+export { default as newsModel} from './news.js';

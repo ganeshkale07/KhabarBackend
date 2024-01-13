@@ -1,1 +1,1 @@
-export { default as router} from './register';
+export { default as router} from './register.js';

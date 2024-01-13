@@ -1,5 +1,5 @@
-export {default as registerController} from './auth/registerController';
-export {default as loginController} from './auth/loginController';
-export {default as userController} from './auth/userController';
-export {default as refreshTokenController} from './auth/refreshTokenController';
-export {default as newsDataController} from './auth/newsDataController';
+export {default as registerController} from './auth/registerController.js';
+export {default as loginController} from './auth/loginController.js';
+export {default as userController} from './auth/userController.js';
+export {default as refreshTokenController} from './auth/refreshTokenController.js';
+export {default as newsDataController} from './auth/newsDataController.js';
