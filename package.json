@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "All about registration login jwt token and CRUD operations",
   "main": "index.js",
+  "type" : module,
   "scripts": {
     "dev": "nodemon -r esm server.js",
     "start": "node -r esm server.js"
