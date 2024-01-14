@@ -1,8 +1,9 @@
 import express from 'express';
-import { APP_PORT,MONGODB_USERNAME,MONGODB_PASSWORD } from "./config/index.js";
+import {MONGODB_USERNAME,MONGODB_PASSWORD } from "./config/index.js";
 import cors  from "cors";
 import mongoose from 'mongoose';
 
+let app_port = process.env || 5001;
 //middleware
 import {errorHandler} from "./middlewares/index.js";
 
@@ -30,7 +31,7 @@ db.once('open', function() {
 
 
 app.use(errorHandler);
-app.listen(APP_PORT, () => {
+app.listen(app_port, () => {
     console.log(`Currently listening on Port ${APP_PORT} `);
 
 })
