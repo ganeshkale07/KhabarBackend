@@ -1,5 +1,5 @@
 import express from 'express';
-import { APP_PORT,MONGODB_USERNAME,MONGODB_PASSWORD } from "./config";
+import { MONGODB_USERNAME,MONGODB_PASSWORD } from "./config";
 import cors  from "cors";
 import mongoose from 'mongoose';
 
@@ -10,6 +10,7 @@ import {errorHandler} from "./middlewares";
 import { router } from "./routes";
 
 const app = express();
+let port = process.env || 5001;
 
 app.use(express.json());
 app.use(cors());
@@ -24,13 +25,8 @@ db.once('open', function() {
 }); 
 
 
-
-
-
-
-
 app.use(errorHandler);
-app.listen(APP_PORT || 5001, () => {
-    console.log(`Currently listening on Port ${APP_PORT} `);
+app.listen(port, () => {
+    console.log(`Currently listening on Port ${port} `);
 
 })
