@@ -30,7 +30,7 @@ db.once('open', function() {
 
 
 app.use(errorHandler);
-app.listen(APP_PORT, () => {
+app.listen(APP_PORT || 5001, () => {
     console.log(`Currently listening on Port ${APP_PORT} `);
 
 })
